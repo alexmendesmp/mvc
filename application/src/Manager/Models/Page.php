@@ -22,6 +22,8 @@ class Page extends \ActiveRecord\Model {
 //            'page_status'   =>  'active',
 //        ));
 
+        // linha inserida para test
+        // Mais uma linha inserida!!!!! DSC-99
         $pages = \Manager\Models\Page::find( 1 );
         return $pages;
     }

@@ -77,5 +77,4 @@ function callDefaultController() {
     $app = new Manager\Controllers\Controller();
     $app->loadViewObject( new Manager\Views\View() );
     $app->index();
-    
 }
