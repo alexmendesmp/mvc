@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-0": {
+            "Manager\\": "src/"
+        }
+    },
+    "require": {
+        "php-activerecord/php-activerecord": "dev-master"
+    }
+}
