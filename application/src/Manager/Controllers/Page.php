@@ -19,13 +19,13 @@ class Page extends Controller {
         $this->view->render( 'page/index', array( 'Employee', $variavel ) );
     }
     
-    public function delete( $id = null ) {
+    public function listall( $id = null ) {
         
         $PageModel = $this->loadModel( 'Page' );
-        $PageModel->index();
+        $PageModel->getPages();
         
         $data = array( 'model' => 'MVC', 'id' => $id );
-        $this->view->render( 'page/delete', array( 'mvc', $data ) );
+        $this->view->render( 'page/listall', array( 'mvc', $data ) );
     }
 
     public function pagelist( $id = null ) {
@@ -34,7 +34,7 @@ class Page extends Controller {
         $pages = $PageModel->getPages();
         echo "<pre>";
         print_r( $pages );
-        echo $pages->id;
+        //echo $pages->id;
         
 //        $data = array( 'model' => 'MVC', 'id' => $id );
 //        $this->view->render( 'page/delete', array( 'mvc', $data ) );

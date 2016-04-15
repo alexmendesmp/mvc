@@ -13,18 +13,19 @@ class Page extends \ActiveRecord\Model {
     }
     
     public function getPages() {
-        
-//        Page::create(array(
-//            'page_title'    =>  'Title page test',
-//            'page_content'  =>  'Content teste',
-//            'created'       =>  date( 'd-m-Y H:i:s', time() ),
-//            'modified'      =>  date( 'd-m-Y H:i:s', time() ),
-//            'page_status'   =>  'active',
-//        ));
+                    
+//        $page = new Page();
+//        $page->page_title = 'Fale conosco';
+//        $page->save();
 
         // linha inserida para test
         // Mais uma linha inserida!!!!! DSC-99
-        $pages = \Manager\Models\Page::find( 1 );
+                
+        $pages = Page::find( 13 );
+        echo $pages->title;
+        
+        die( print_r( $pages ) );
+        
         return $pages;
     }
 
