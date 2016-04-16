@@ -15,18 +15,16 @@ class Page extends \ActiveRecord\Model {
     public function getPages() {
                     
 //        $page = new Page();
-//        $page->page_title = 'Fale conosco';
+//        $page->title = 'Sobre';
 //        $page->save();
 
         // linha inserida para test
         // Mais uma linha inserida!!!!! DSC-99
                 
         $pages = Page::find( 13 );
-        echo $pages->title;
-        
+        echo "<pre>";
         die( print_r( $pages ) );
-        
-        return $pages;
+        return json_encode( $pages );
     }
 
 }
