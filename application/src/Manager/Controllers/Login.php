@@ -3,7 +3,10 @@
 use Manager\Controllers\Controller as Controller;
 
 namespace Manager\Controllers;
-
+/**
+ * Call Login page
+ * 
+ */
 class Login extends Controller {
 
     public function __construct() {
@@ -19,12 +22,11 @@ class Login extends Controller {
      */
     public function authenticate() {
         
-        $username = $this->getParam( 'username' );
-        $userpass = $this->getParam( 'userpass' );
+        $username = \Manager\Libs\Manager::app()->getParam( 'username' );
+        $userpass = \Manager\Libs\Manager::app()->getParam( 'userpass' );
         $auth = new \Manager\Libs\Auth();
         $res = $auth->authenticate( $username, $userpass );
         
         echo $res;
     }
-
 }
