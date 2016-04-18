@@ -3,14 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/mvc/application/src/Manager/Models/Page.php</file>
-            <file>file:/C:/wamp/www/mvc/application/src/Manager/Controllers/User.php</file>
-            <file>file:/C:/wamp/www/mvc/index.php</file>
-            <file>file:/C:/wamp/www/mvc/application/src/Libs/db.php</file>
-            <file>file:/C:/wamp/www/mvc/application/Bootstrap.php</file>
-            <file>file:/C:/wamp/www/mvc/application/src/Manager/Controllers/Page.php</file>
             <file>file:/C:/wamp/www/mvc/application/composer.json</file>
-            <file>file:/C:/wamp/www/mvc/application/src/Manager/Models/User.php</file>
+            <file>file:/C:/wamp/www/mvc/index.php</file>
+            <file>file:/C:/wamp/www/mvc/application/Bootstrap.php</file>
+            <file>file:/C:/wamp/www/mvc/application/src/Manager/Models/Page.php</file>
+            <file>file:/C:/wamp/www/mvc/application/src/Manager/Controllers/Page.php</file>
+            <file>file:/C:/wamp/www/mvc/application/src/Libs/db.php</file>
         </group>
     </open-files>
 </project-private>

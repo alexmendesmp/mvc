@@ -7,13 +7,13 @@
 // Define Constants
 define( 'DS', DIRECTORY_SEPARATOR );
 define( 'MANAGER_APP_DIR', dirname( __FILE__ ) . DS );
-define( 'MANAGER_LIBS_DIR', MANAGER_APP_DIR . 'src' . DS . 'Libs' . DS );
+define( 'MANAGER_LIBS_DIR', MANAGER_APP_DIR . 'src' . DS . 'Manager' . DS . 'Libs' . DS );
 define( 'MANAGER_CONTROLLERS_DIR', MANAGER_APP_DIR . 'src' . DS . 'Manager' . DS . 'Controllers' . DS );
 define( 'MANAGER_MODELS_DIR', MANAGER_APP_DIR . 'src' . DS . 'Manager' . DS . 'Models' . DS );
 define( 'MANAGER_VIEWS_DIR', MANAGER_APP_DIR . 'src' . DS . 'Manager' . DS . 'Views' . DS );
 
 // Includes
-require_once  MANAGER_LIBS_DIR . 'db.php';
+require_once  MANAGER_LIBS_DIR . 'DB.php';
 
 $tmp = filter_input( INPUT_GET, 'qy' );
 $qy = explode( '/', $tmp );
@@ -21,16 +21,16 @@ $qy = explode( '/', $tmp );
 // Controller
 if( isset( $qy[0] ) ) $qController = $qy[0];
     else $qController = null;
-// Controller
+// Action
 if( isset( $qy[1] ) ) $qAction = $qy[1];
     else $qAction = null;
-// Controller
+// Parameter
 if( isset( $qy[2] ) ) $qParam = $qy[2];
     else $qParam = null;
 
-echo '<br />controller -> ' . $qController;
-echo '<br />action -> ' . $qAction;
-echo '<br />param -> ' . $qParam;
+//echo '<br />controller -> ' . $qController;
+//echo '<br />action -> ' . $qAction;
+//echo '<br />param -> ' . $qParam;
 
 /*
  * If controller is passed and exists
