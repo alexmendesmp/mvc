@@ -20,23 +20,23 @@ class Page extends Controller {
     }
     
     public function listall( $id = null ) {
-        
-        $PageModel = $this->loadModel( 'Page' );
-        $PageModel->getPages();
-        
+
+        // Need DB Connetion
+        // 
+//        $PageModel = $this->loadModel( 'Page' );
+//        $PageModel->getPages();
         $data = array( 'model' => 'MVC', 'id' => $id );
         $this->view->render( 'page/listall', array( 'mvc', $data ) );
     }
 
-    public function pagelist( $id = null ) {
+    public function pagedelete( $id = null ) {
+
+        // Need DB Connection
+        // 
+//        $PageModel = $this->loadModel( 'Page' );
+//        $pages = $PageModel->getPages();
         
-        $PageModel = $this->loadModel( 'Page' );
-        $pages = $PageModel->getPages();
-        echo "<pre>";
-        print_r( $pages );
-        //echo $pages->id;
-        
-//        $data = array( 'model' => 'MVC', 'id' => $id );
-//        $this->view->render( 'page/delete', array( 'mvc', $data ) );
+        $data = array( 'model' => 'MVC', 'id' => $id );
+        $this->view->render( 'page/delete', array( 'mvc', $data ) );
     }
 }

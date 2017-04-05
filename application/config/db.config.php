@@ -2,10 +2,10 @@
 
 return [
     'db' => [
-        'HOST_NAME' => 'mysql.managerprojects.com.br',
-        'DATABASE'  => 'managerprojects',
-        'USERNAME'  => 'managerprojects',
-        'PASSWORD'  => 'manager0102',
+        'HOST_NAME' => '',
+        'DATABASE'  => '',
+        'USERNAME'  => '',
+        'PASSWORD'  => '',
         'CHARSET'   => 'utf8',
     ]
 ];

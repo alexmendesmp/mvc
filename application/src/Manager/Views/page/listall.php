@@ -1,3 +1,3 @@
 
-<h2>Delete... <?php echo $mvc['model'] . ' - ' . $mvc['id']; ?></h2>
+<h2>LIST ALL... <?php echo $mvc['model'] . ' - ' . $mvc['id']; ?></h2>
 

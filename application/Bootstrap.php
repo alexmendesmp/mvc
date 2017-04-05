@@ -37,7 +37,6 @@ if( isset( $qy[2] ) ) $qParam = $qy[2];
  * than initialize it.
  */
 if( ! is_null( $qController ) && ! empty( $qController ) ) {
-    
     $controllerNameSpace = 'Manager\\Controllers\\';
     $qControllerFileName = ucfirst( $qController ) . '.php';
     $qControllerClassName = $controllerNameSpace . ucfirst( $qController );
